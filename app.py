@@ -1,22 +1,6 @@
 import subprocess
 import sys
 
-def install_and_import():
-    required = {
-        "streamlit": "streamlit",
-        "pandas": "pandas",
-        "numpy": "numpy",
-        "plotly": "plotly",
-        "openpyxl": "openpyxl",
-    }
-    for module, package in required.items():
-        try:
-            __import__(module)
-        except ImportError:
-            subprocess.check_call([sys.executable, "-m", "pip", "install", package, "-q"])
-
-install_and_import()
-
 import streamlit as st
 import pandas as pd
 import numpy as np
