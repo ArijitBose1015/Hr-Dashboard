@@ -369,9 +369,7 @@ def create_kpis(filtered: pd.DataFrame, df_full: pd.DataFrame, cols: dict):
         (c4, "purple", "🏢 Departments",         str(num_depts),             "Active departments"),
     ]
 
-    for col_obj, color, label, value, sub in kpi_data:
-        with col_obj:
-        
+   
 # ─────────────────────────────────────────────
 # CHARTS
 # ─────────────────────────────────────────────
