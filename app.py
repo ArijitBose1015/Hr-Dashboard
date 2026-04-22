@@ -103,7 +103,7 @@ st.markdown("""
         border-radius: 14px;
         padding: 1.4rem 1.6rem;
         box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-        margin-bottom: 1.25rem;
+        margin-bottom: 0.6rem;
     }
     .chart-title {
         font-size: 1rem;
