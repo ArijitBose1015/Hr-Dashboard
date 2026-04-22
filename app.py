@@ -371,18 +371,7 @@ def create_kpis(filtered: pd.DataFrame, df_full: pd.DataFrame, cols: dict):
 
     for col_obj, color, label, value, sub in kpi_data:
         with col_obj:
-            st.markdown(
-                f"""
-                <div class="kpi-card {color}">
-                    <div class="kpi-label">{label}</div>
-                    <div class="kpi-value">{value}</div>
-                    <div class="kpi-sub">{sub}</div>
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
-
-
+        
 # ─────────────────────────────────────────────
 # CHARTS
 # ─────────────────────────────────────────────
