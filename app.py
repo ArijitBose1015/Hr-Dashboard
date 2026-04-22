@@ -360,7 +360,7 @@ def create_kpis(filtered: pd.DataFrame, df_full: pd.DataFrame, cols: dict):
         if cols["department"] else "N/A"
     )
 
-    c1, c2, c3, c4 = st.columns(4, gap="medium")
+    c1, c2, c3, c4 = st.columns(4, gap="small")
 
     kpi_data = [
         (c1, "blue",   "👥 Total Employees",   f"{total_emp:,}",           "Active headcount"),
@@ -405,7 +405,7 @@ def _fig_defaults(fig):
 
 def create_charts(filtered: pd.DataFrame, cols: dict):
     # ── Row 1: Headcount by Dept  |  Gender Distribution
-    r1c1, r1c2 = st.columns([3, 2], gap="medium")
+    r1c1, r1c2 = st.columns([3, 2], gap="small")
 
     with r1c1:
         st.markdown('<div class="chart-card">', unsafe_allow_html=True)
@@ -456,7 +456,7 @@ def create_charts(filtered: pd.DataFrame, cols: dict):
         st.markdown("</div>", unsafe_allow_html=True)
 
     # ── Row 2: Monthly Hiring Trend  |  Attrition by Dept
-    r2c1, r2c2 = st.columns([3, 2], gap="medium")
+    r2c1, r2c2 = st.columns([3, 2], gap="small")
 
     with r2c1:
         st.markdown('<div class="chart-card">', unsafe_allow_html=True)
@@ -521,7 +521,7 @@ def create_charts(filtered: pd.DataFrame, cols: dict):
         st.markdown("</div>", unsafe_allow_html=True)
 
     # ── Row 3: Salary Distribution | Designation Breakdown
-    r3c1, r3c2 = st.columns([2, 3], gap="medium")
+    r3c1, r3c2 = st.columns([2, 3], gap="small")
 
     with r3c1:
         st.markdown('<div class="chart-card">', unsafe_allow_html=True)
