@@ -685,12 +685,9 @@ def main():
     # ── KPIs ──
     create_kpis(filtered, df, cols)
 
-    st.markdown("<div style='margin-top:1.5rem;'></div>", unsafe_allow_html=True)
-
+    
     # ── Charts ──
     create_charts(filtered, cols)
-
-    st.markdown("<div style='margin-top:0.5rem;'></div>", unsafe_allow_html=True)
 
     # ── Table ──
     show_data_table(filtered, cols)
