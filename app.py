@@ -128,9 +128,26 @@ st.markdown("""
     [data-testid="stSidebar"] {
         background: #1f4e79 !important;
     }
-    [data-testid="stSidebar"] * {
-        color: #ffffff !important;
-    }
+    [data-testid="stSidebar"] {
+    background: #1f4e79 !important;
+}
+
+/* Text labels */
+[data-testid="stSidebar"] label {
+    color: rgba(255,255,255,0.9) !important;
+}
+
+/* Input text inside fields */
+[data-testid="stSidebar"] input,
+[data-testid="stSidebar"] div[data-baseweb="select"] span {
+    color: #111827 !important;
+}
+
+/* Dropdown background */
+[data-testid="stSidebar"] [data-baseweb="select"] {
+    background: #ffffff !important;
+    border-radius: 8px !important;
+}
     [data-testid="stSidebar"] .stMultiSelect > label,
     [data-testid="stSidebar"] .stDateInput > label,
     [data-testid="stSidebar"] .stSelectbox > label {
